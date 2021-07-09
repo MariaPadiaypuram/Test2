@@ -568,3 +568,128 @@ No more data in the server stdin, exiting...
 No more data in the client stdin, exiting...
 No more data in the server stdin, exiting...
 No more data in the server stdin, exiting...
+[0m2021.07.09 17:02:33 INFO  Started: Metals version 0.10.4 in workspace 'C:\Users\jismi\IdeaProjects\VS Code Example' for client Visual Studio Code 1.58.0.[0m
+[0m2021.07.09 17:02:39 INFO  time: initialize in 5.59s[0m
+[0m2021.07.09 17:02:39 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 32460'...
+Waiting for the bsp connection to come up...
+[0m2021.07.09 17:02:39 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:32460...
+The server is listening for incoming connections at tcp://127.0.0.1:32460...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.07.09 17:02:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\jismi\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.07.09 17:02:39 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 37198'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:37198...
+The server is listening for incoming connections at tcp://127.0.0.1:37198...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.07.09 17:02:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\jismi\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.07.09 17:02:40 INFO  time: Connected to build server in 1.29s[0m
+[0m2021.07.09 17:02:40 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.07.09 17:02:40 INFO  time: Imported build in 0.11s[0m
+[0m2021.07.09 17:02:45 INFO  time: indexed workspace in 5.19s[0m
+Exception in thread "pool-3-thread-1" java.lang.NoClassDefFoundError: javax/tools/DiagnosticListener
+	at scala.tools.util.PathResolverBase$Calculated$.javaBootClasspath(PathResolver.scala:277)
+	at scala.tools.util.PathResolverBase$Calculated$.basis(PathResolver.scala:283)
+	at scala.tools.util.PathResolverBase$Calculated$.containers$lzycompute(PathResolver.scala:293)
+	at scala.tools.util.PathResolverBase$Calculated$.containers(PathResolver.scala:293)
+	at scala.tools.util.PathResolverBase.containers(PathResolver.scala:309)
+	at scala.tools.util.PathResolver.computeResult(PathResolver.scala:341)
+	at scala.tools.util.PathResolver.computeResult(PathResolver.scala:332)
+	at scala.tools.util.PathResolverBase.result(PathResolver.scala:314)
+	at scala.tools.nsc.backend.JavaPlatform$class.classPath(JavaPlatform.scala:28)
+	at scala.tools.nsc.Global$GlobalPlatform.classPath(Global.scala:115)
+	at scala.tools.nsc.Global.scala$tools$nsc$Global$$recursiveClassPath(Global.scala:131)
+	at scala.tools.nsc.Global$GlobalMirror.rootLoader(Global.scala:64)
+	at scala.reflect.internal.Mirrors$Roots$RootClass.<init>(Mirrors.scala:307)
+	at scala.reflect.internal.Mirrors$Roots.RootClass$lzycompute(Mirrors.scala:321)
+	at scala.reflect.internal.Mirrors$Roots.RootClass(Mirrors.scala:321)
+	at scala.reflect.internal.Mirrors$Roots$EmptyPackageClass.<init>(Mirrors.scala:330)
+	at scala.reflect.internal.Mirrors$Roots.EmptyPackageClass$lzycompute(Mirrors.scala:336)
+	at scala.reflect.internal.Mirrors$Roots.EmptyPackageClass(Mirrors.scala:336)
+	at scala.reflect.internal.Mirrors$Roots.EmptyPackageClass(Mirrors.scala:276)
+	at scala.reflect.internal.Mirrors$RootsBase.init(Mirrors.scala:250)
+	at scala.tools.nsc.Global.rootMirror$lzycompute(Global.scala:73)
+	at scala.tools.nsc.Global.rootMirror(Global.scala:71)
+	at scala.tools.nsc.Global.rootMirror(Global.scala:39)
+	at scala.reflect.internal.Definitions$DefinitionsClass.ObjectClass$lzycompute(Definitions.scala:257)
+	at scala.reflect.internal.Definitions$DefinitionsClass.ObjectClass(Definitions.scala:257)
+	at scala.reflect.internal.Definitions$DefinitionsClass.init(Definitions.scala:1390)
+	at scala.tools.nsc.Global$Run.<init>(Global.scala:1242)
+	at scala.tools.nsc.interactive.Global$TyperRun.<init>(Global.scala:1321)
+	at scala.tools.nsc.interactive.Global.newTyperRun(Global.scala:1344)
+	at scala.tools.nsc.interactive.Global.<init>(Global.scala:299)
+	at scala.meta.internal.pc.MetalsGlobal.<init>(MetalsGlobal.scala:37)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.newCompiler(ScalaPresentationCompiler.scala:235)
+	at scala.meta.internal.pc.ScalaPresentationCompiler$$anonfun$1.apply(ScalaPresentationCompiler.scala:83)
+	at scala.meta.internal.pc.ScalaPresentationCompiler$$anonfun$1.apply(ScalaPresentationCompiler.scala:83)
+	at scala.meta.internal.pc.CompilerAccess.loadCompiler(CompilerAccess.scala:37)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess$$anonfun$withNonInterruptableCompiler$1.apply(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess$$anonfun$onCompilerJobQueue$1.apply$mcV$sp(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: java.lang.ClassNotFoundException: javax.tools.DiagnosticListener
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:433)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	... 42 more
+Jul 09, 2021 5:05:06 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Exception in thread "pool-3-thread-2" java.lang.NoClassDefFoundError: javax/tools/DiagnosticListener
+	at scala.tools.util.PathResolverBase$Calculated$.javaBootClasspath(PathResolver.scala:277)
+	at scala.tools.util.PathResolverBase$Calculated$.basis(PathResolver.scala:283)
+	at scala.tools.util.PathResolverBase$Calculated$.containers$lzycompute(PathResolver.scala:293)
+	at scala.tools.util.PathResolverBase$Calculated$.containers(PathResolver.scala:293)
+	at scala.tools.util.PathResolverBase.containers(PathResolver.scala:309)
+	at scala.tools.util.PathResolver.computeResult(PathResolver.scala:341)
+	at scala.tools.util.PathResolver.computeResult(PathResolver.scala:332)
+	at scala.tools.util.PathResolverBase.result(PathResolver.scala:314)
+	at scala.tools.nsc.backend.JavaPlatform$class.classPath(JavaPlatform.scala:28)
+	at scala.tools.nsc.Global$GlobalPlatform.classPath(Global.scala:115)
+	at scala.tools.nsc.Global.scala$tools$nsc$Global$$recursiveClassPath(Global.scala:131)
+	at scala.tools.nsc.Global$GlobalMirror.rootLoader(Global.scala:64)
+	at scala.reflect.internal.Mirrors$Roots$RootClass.<init>(Mirrors.scala:307)
+	at scala.reflect.internal.Mirrors$Roots.RootClass$lzycompute(Mirrors.scala:321)
+	at scala.reflect.internal.Mirrors$Roots.RootClass(Mirrors.scala:321)
+	at scala.reflect.internal.Mirrors$Roots$EmptyPackageClass.<init>(Mirrors.scala:330)
+	at scala.reflect.internal.Mirrors$Roots.EmptyPackageClass$lzycompute(Mirrors.scala:336)
+	at scala.reflect.internal.Mirrors$Roots.EmptyPackageClass(Mirrors.scala:336)
+	at scala.reflect.internal.Mirrors$Roots.EmptyPackageClass(Mirrors.scala:276)
+	at scala.reflect.internal.Mirrors$RootsBase.init(Mirrors.scala:250)
+	at scala.tools.nsc.Global.rootMirror$lzycompute(Global.scala:73)
+	at scala.tools.nsc.Global.rootMirror(Global.scala:71)
+	at scala.tools.nsc.Global.rootMirror(Global.scala:39)
+	at scala.reflect.internal.Definitions$DefinitionsClass.ObjectClass$lzycompute(Definitions.scala:257)
+	at scala.reflect.internal.Definitions$DefinitionsClass.ObjectClass(Definitions.scala:257)
+	at scala.reflect.internal.Definitions$DefinitionsClass.init(Definitions.scala:1390)
+	at scala.tools.nsc.Global$Run.<init>(Global.scala:1242)
+	at scala.tools.nsc.interactive.Global$TyperRun.<init>(Global.scala:1321)
+	at scala.tools.nsc.interactive.Global.newTyperRun(Global.scala:1344)
+	at scala.tools.nsc.interactive.Global.<init>(Global.scala:299)
+	at scala.meta.internal.pc.MetalsGlobal.<init>(MetalsGlobal.scala:37)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.newCompiler(ScalaPresentationCompiler.scala:235)
+	at scala.meta.internal.pc.ScalaPresentationCompiler$$anonfun$1.apply(ScalaPresentationCompiler.scala:83)
+	at scala.meta.internal.pc.ScalaPresentationCompiler$$anonfun$1.apply(ScalaPresentationCompiler.scala:83)
+	at scala.meta.internal.pc.CompilerAccess.loadCompiler(CompilerAccess.scala:37)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess$$anonfun$withNonInterruptableCompiler$1.apply(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess$$anonfun$onCompilerJobQueue$1.apply$mcV$sp(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: java.lang.ClassNotFoundException: javax.tools.DiagnosticListener
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:433)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	... 42 more
